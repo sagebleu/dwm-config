@@ -7,7 +7,7 @@ static const char font[]            = "-*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
 static const char normbordercolor[] = "#000000";
 static const char normbgcolor[]     = "#151515";
 static const char normfgcolor[]     = "#959595";  /* Texte inactif */
-static const char selbordercolor[]  = "#afcfff";  /* bordure de la fenêtre */
+static const char selbordercolor[]  = "#000000";  /* bordure de la fenêtre */
 static const char selbgcolor[]      = "#000000";  /* fond de la barre */
 static const char selfgcolor[]      = "#ffffff";  /* Texte actif */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -55,7 +55,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 
 static Key keys[] = {
